@@ -1,0 +1,14 @@
+#!/usr/bin/bash
+echo "Script name: $0"
+echo "First argument: $1"
+echo "All arguments: $@"
+echo "Number of arguments: $# "
+
+#What we get when called:
+#> bash first_commands Hello world  
+#
+#Script name: first_commands
+#First argument: Hello
+#All arguments: Hello world
+#Number of arguments: 2
+
