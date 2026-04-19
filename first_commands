@@ -3,6 +3,7 @@ echo "Script name: $0"
 echo "First argument: $1"
 echo "All arguments: $@"
 echo "Number of arguments: $# "
+echo " "
 
 #What we get when called:
 #> bash first_commands Hello world  
@@ -12,3 +13,22 @@ echo "Number of arguments: $# "
 #All arguments: Hello world
 #Number of arguments: 2
 
+#this command gets last ran exit code
+ls /non-existance 
+echo "Exit code : $?"
+echo " "
+
+#other special variables
+echo "current shell process : $$"
+echo "current user : $USER"
+echo "home dir: $HOME"
+echo "current dir: $PWD"
+
+echo "test if dir exist"
+echo "=================":
+my_dir_with_space="test dir 1"
+the_dir=$PWD/$my_dir_with_space
+echo "check if directory exist $the_dir"
+
+#Checking If a Directory Exists In a Bash Shell Script
+[ -d "${the_dir}" ] && [ ! -L "${the_dir}" ] && echo "Directory ${the_dir} exists." || echo "Error: Directory ${the_dir} don't exists"
