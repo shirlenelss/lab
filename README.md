@@ -6,5 +6,5 @@ date_test_bad: rad 2: ${date +%Y-%m-%d}: felaktig substitution
 date_test_bad: rad 3: oväntat filslut vid sökning efter matchande
 
 ## run the good command file
-chmod+x good_date
-bash good_date 
+chmod+x date_good
+bash date_good
