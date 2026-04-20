@@ -8,3 +8,8 @@ date_test_bad: rad 3: oväntat filslut vid sökning efter matchande
 ## run the good command file
 chmod+x date_good
 bash date_good
+
+
+## use sed to replace words 
+## mac needs the first empty parameter, linux doesn't 
+sed -i '' 's/hello/hi/' parameter_expansion
